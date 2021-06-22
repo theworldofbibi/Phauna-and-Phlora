@@ -1,0 +1,136 @@
+@import url(header.css);
+@import url(footer.css);
+@import url(../Fonte/font.css);
+
+/* DARK MODE */
+:root{
+    --black: black;
+    --button: #FB284B;
+    --switch: #5B91FF;
+    --white: white;
+}
+
+.dark-mode:root{
+    --black: white;
+    --button: #1ECF28;
+    --switch: #C7422A;
+    --white: black;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.transition{
+    transition: none !important; /*!important: sobrescreve o valor de transição anterior*/
+}
+
+*{
+    font-family: "Simple Print";
+}
+
+body, p{
+    background: var(--white);
+    margin: 0;
+    transition: background-color .5s;
+}
+
+/* NAVEGADOR */
+.nav_links:first-child{ 
+    color: var(--black);
+}
+
+.nav_links:nth-child(5){ 
+    color: #5B91FF;
+}
+
+/* CLASSE MÃE */
+.items{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 75px;
+}
+
+.photos{
+    display: flex;
+}
+
+.birds{
+    width: 410px;
+}
+
+/* FORMULÁRIO */
+.form{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+
+.title_form{
+    color: var(--black);
+    display: flex;
+    font-family: "Simple Print";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: normal;
+    justify-content: center; 
+    line-height: 32px;
+    margin: 0 0 39px 0;
+    text-align: center;
+    transition: color 0.5s;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.register{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.field{
+    border: 2px solid black;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: normal;
+    height: 52px;
+    line-height: 32px;
+    padding-left: 10px;
+    width: 343px;
+}
+
+.scholarity{
+    align-items: center;
+    color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: normal;
+    height: 52px;
+    line-height: 21px;
+    width: 359px;
+}
+
+select option[disabled]:first-child{ 
+    display: none;
+}
+
+.button_submit{
+    background: #1EA928;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Simple Print";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: normal;
+    height: 51px;
+    line-height: 26px;
+    margin-bottom: 40px;
+    outline: none;
+    text-align: center;
+    width: 111px;
+}

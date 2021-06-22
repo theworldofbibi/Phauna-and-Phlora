@@ -1,0 +1,89 @@
+.logo{
+    display: flex;
+    justify-self: flex-start;
+}
+
+.logo_img{
+    display: flex;
+    opacity: 1;
+    place-items: center;
+    transition: opacity .5s;
+    width: 450px;
+}
+
+.nav{
+    display: grid; 
+    grid-template-columns: auto 2fr 1fr;
+    margin: 30px 30px 39px 30px;
+    place-items: center;
+}
+
+.nav_icons{ 
+    opacity: 1;
+    padding-bottom: 5px;
+    transition: opacity .5s;
+    width: 35px;
+}
+
+.nav_list{
+    display: flex;
+    gap: 25px; 
+    place-items: center;
+    place-self: center;
+}
+
+.nav_links:first-child{ 
+    color: #5B91FF;
+}
+
+.nav_links{
+    color: var(--black);
+    display: flex;
+    flex-direction: column; 
+    font-size: 28px;
+    place-items: center;
+    text-align: center;
+    text-decoration: none;
+    transition: color .5s;
+}
+
+.switch{
+    background-color: var(--switch);
+    border-radius: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+    transition: background-color 0.5s;
+    user-select: none;
+    width: 160px;
+}
+
+.switch::after{
+    background-color: var(--button);
+    border-radius: 50%;
+    content: "";
+    height: 45px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    transition: background-color .5s, left .5s;
+    width: 45px;
+}
+
+.light::after{
+    left: 17%;
+    opacity: 1;
+}
+
+.dark::after{
+    left: 83%;
+    opacity: 1;
+}
+
+.mode{
+    transition: opacity 0.5s;
+    width: 40px;
+}

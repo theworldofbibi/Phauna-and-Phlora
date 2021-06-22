@@ -1,0 +1,101 @@
+@import url(header.css);
+@import url(footer.css);
+@import url(../Fonte/font.css);
+
+/* DARK MODE */
+:root{
+    --black: black;
+    --button: #FB284B;
+    --switch: #5B91FF;
+    --white: white;
+}
+
+.dark-mode:root{
+    --black: white;
+    --button: #1ECF28;
+    --switch: #C7422A;
+    --white: black;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.transition{
+    transition: none !important; /*!important: sobrescreve o valor de transição anterior*/
+}
+
+*{
+    font-family: "Simple Print";
+}
+
+body, p{
+    background: var(--white);
+    margin: 0;
+    transition: background-color .5s;
+}
+
+/* NAVEGADOR */
+.nav_links:first-of-type{ 
+    color: var(--black);
+}
+
+.nav_links:nth-child(7){ 
+    color: #5B91FF;
+}
+
+/* CLASSE MÃE */
+.items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+/* ITENS DA PÁGINA */
+.text{
+    color: var(--black);
+    display: flex;
+    font-family: "Simple Print";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: normal;
+    justify-content: center; 
+    line-height: 32px;
+    margin: 0 0 29px 0;
+    text-align: center;
+    transition: color 0.5s;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.icons{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 32px;
+    place-self: center;
+    width: 710px;
+}
+
+.instagram, .gmail, .youtube{
+    transition: opacity .5s;
+}
+
+.instagram{
+    width: 78px;
+}
+
+.gmail, .youtube{
+    width: 100px;
+}
+
+.photo{
+    display: flex; 
+    justify-content: center; 
+}
+
+.rio{
+    width: 715px;
+    height: 476px;
+}

@@ -1,0 +1,111 @@
+@import url(header.css);
+@import url(footer.css);
+@import url(../Fonte/font.css);
+
+/* DARK MODE */
+:root{
+    --black: black;
+    --button: #FB284B;
+    --switch: #5B91FF;
+    --white: white;
+}
+
+.dark-mode:root{
+    --black: white;
+    --button: #1ECF28;
+    --switch: #C7422A;
+    --white: black;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.transition{
+    transition: none !important; /*!important: sobrescreve o valor de transição anterior*/
+}
+
+*{
+    font-family: "Simple Print";
+}
+
+body, p{
+    background: var(--white);
+    margin: 0;
+    transition: background-color .5s;
+}
+
+/* NAVEGADOR */
+.nav_links:first-of-type{ 
+    color: var(--black);
+}
+
+.nav_links:nth-child(3){ 
+    color: #5B91FF;
+}
+
+/* CLASSE MÃE */
+.main{
+    display: flex;
+}
+
+/* PERFIS */
+.about_us{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 81px auto;
+}
+
+.text{
+    color: var(--black);
+    font-size: 36px;
+    line-height: .85em;
+    margin-bottom: 54px;
+    text-align: center;
+    transition: color .5s, background .5s;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.profiles{
+    display: flex;
+    gap: 100px;
+}
+
+.card{
+    text-align: center;
+}
+
+.card-text{
+    color: var(--black);
+    font-size: 36px;
+    line-height: .9em;
+    text-align: center;
+    transition: color .5s, background .5s;
+}
+
+.card-photo{
+    height: 370px;
+    margin-bottom: 31px;
+}
+
+/* ONGS */
+.ONGs{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.icons{
+    align-items: center;
+    display: flex;
+    gap: 120px;
+    margin-bottom: 100px;
+}
+
+.ONGs-logo{
+    transition: opacity .5s;
+    width: 160px;
+}
