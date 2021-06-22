@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <script defer src="JavaScript/main.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Gabrielle Baptista da Silva Fonseca e Matheus Guarnieri Pfau Ferreira">
+
+    <link rel="stylesheet" type="text/css" href="CSS/cadastro.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Phauna and Phlora</title>
+
+</head>
+
+<body class="transition">
+
+    <header>
+
+        <nav>
+
+            <div class="nav">
+
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="imagens_dark/titulo_dark.png" alt="Logo" class="logo_img hidden transition" style="position: absolute;">
+                        <img src="imagens_light/titulo.png" alt="Logo" class="logo_img">
+                    </a>
+                </div>
+
+                <div class="nav_list">
+                    <a class="nav_links transition" href="index.html">
+                        <img class="nav_icons" src="imagens_light/home.png" alt="Página Inicial">Página Inicial
+                        <img class="nav_icons hidden transition" style="position: absolute;" src="imagens_dark/home_dark.png" alt="Página Inicial">
+                    </a>
+                    
+                    <img src="imagens_light/separador.png" alt="">
+
+                    <a class="nav_links transition" href="quem_somos.html">
+                        <img class="nav_icons" src="imagens_light/terra.png" alt="Quem Somos">Quem Somos
+                        <img class="nav_icons hidden transition" style="position: absolute;" src="imagens_dark/terra_dark.png" alt="Quem Somos">
+                    </a>
+
+                    <img src="imagens_light/separador.png" alt="">
+
+                    <a class="nav_links transition" href="cadastro.html">
+                        <img class="nav_icons" src="imagens_light/caneta_selecao.png" alt="Cadastro">Cadastro
+                    </a>
+
+                    <img src="imagens_light/separador.png" alt="">
+
+                    <a class="nav_links transition" href="fale_conosco.html">
+                        <img class="nav_icons" src="imagens_light/telefone.png" alt="Fale Conosco">Fale Conosco
+                        <img class="nav_icons hidden transition" style="position: absolute;" src="imagens_dark/telefone_dark.png" alt="Fale Conosco">
+                    </a>
+
+                </div>
+
+                <div class="switch transition">
+                    <img class="mode transition" src="imagens_light/moon.svg" alt="">
+                    <img class="mode transition" src="Imagens_light/sun.svg" alt="">
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <h1 class="title_form"> Crie um cadastro no nosso site para receber informações semanais<br/> sobre as notícias da
+        Amazônia</h1>
+
+    <div class="items">
+
+        <div class="photos">
+            <img class="birds" src="imagens_light/arara.jpg" alt="Arara">
+        </div>
+
+        <div class="form">
+
+            <div class="register">
+                
+                <form action="/pagina-processa-dados-do-form" method="post">
+                    <label for="nome"></label>
+                    <input placeholder="Nome Completo (Exp: Levy Baptista da Silva)" type="text" class="field" required id="nome" /><br><br>
+
+
+                    <label for="email"></label>
+                    <input placeholder="E-mail (Exp: exemplo@gmail.com)" type="email" class="field" required id="email"/><br><br>
+
+
+                    <label for="telefone"></label>
+                    <input placeholder="Telefone (Exp: (011) 99999-0000)" type="text" class="field" maxlength="17" required id="telefone"/><br><br>
+
+
+                    <label for="endereco"></label>
+                    <input placeholder="Endereço (Exp: Rua das Orquídeas, 24)" type="text" class="field" required id="endereco"/><br><br>
+
+
+                    <label for="cpf"></label>
+                    <input placeholder="CPF ou CNPJ (Exp: 000.000.000-00)" type="text" class="field" maxlength="14" required id="cpf"/><br><br>
+
+
+                    <label for="data_nascimento"></label>
+                    <input placeholder="Data de Nascimento (Exp: 11/07/1940)" type="text" class="field" maxlength="10" required id="data_nascimento"/><br><br>
+
+                    <select class="field scholarity">
+                        <option selected disabled> Grau de Escolaridade</option>
+                        <option> Superior Completo</option>
+                        <option> Superior Incompleto</option>
+                        <option> Ensino Médio Completo</option>
+                        <option> Ensino Médio Incompleto</option>
+                        <option> Ensino Fundamental Completo</option>
+                        <option> Ensino Fundamental Incompleto</option>
+                        <option> Lê e Escreve</option>
+                    </select><br><br>
+
+                    <input value="Enviar" class="button_submit" type="submit">
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="photos">
+            <img class="birds" src="imagens_light/tucano.JPG" alt="Tucano">
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer">
+        </div>
+    </footer>
+
+</body>
+
+</html>
